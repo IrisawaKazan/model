@@ -24,7 +24,7 @@ Material 3 {
 }
 Object "main" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -108,7 +108,7 @@ Object "main" {
 }
 Object "sub" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -192,7 +192,7 @@ Object "sub" {
 }
 Object "sub1" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -276,7 +276,7 @@ Object "sub1" {
 }
 Object "sub2" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -360,7 +360,7 @@ Object "sub2" {
 }
 Object "sub3" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -444,7 +444,7 @@ Object "sub3" {
 }
 Object "sub4" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -528,7 +528,7 @@ Object "sub4" {
 }
 Object "obj1" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
@@ -582,7 +582,7 @@ Object "obj1" {
 }
 Object "obj2" {
 	visible 15
-	locking 1
+	locking 0
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
