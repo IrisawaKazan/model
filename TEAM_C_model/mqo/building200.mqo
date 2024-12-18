@@ -2,10 +2,10 @@ Metasequoia Document
 Format Text Ver 1.0
 
 Scene {
-	pos -299.6018 -1431.9731 15728.6426
+	pos -274.2106 -1360.8777 15728.6426
 	lookat 0.0000 0.0000 0.0000
-	head 6.7064
-	pich 0.4436
+	head 5.5164
+	pich 0.5836
 	bank 0.0000
 	ortho 0
 	zoom2 0.4768
@@ -19,7 +19,7 @@ Scene {
 }
 Material 3 {
 	"blinn1SG" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.500) spc(0.000) power(5.00) tex("C:\Users\student\Documents\TEAM_C_model\TEXTURE\1.png")
-	"blinn2SG" col(1.000 1.000 1.000 1.000) dif(1.000) amb(0.600) emi(0.000) spc(0.000) power(5.00) tex("C:\Users\student\Documents\TEAM_C_model\TEXTURE\2.png")
+	"blinn2SG" col(1.000 1.000 1.000 1.000) dif(1.000) amb(0.600) emi(0.500) spc(0.000) power(4.00) tex("C:\Users\student\Documents\TEAM_C_model\TEXTURE\2.png")
 	"lambert3SG" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.500) power(5.00) tex("C:\Users\student\Documents\TEAM_C_model\TEXTURE\tetu.jpg")
 }
 Object "obj1" {
