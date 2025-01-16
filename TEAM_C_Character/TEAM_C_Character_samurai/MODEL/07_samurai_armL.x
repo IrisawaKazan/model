@@ -250,7 +250,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "C:\\Users\\student\\Documents\\TEAM_C_Character\\TEAM_C_Character_samurai\\TEXTURE\\waist.png";
+    "data\\TEXTURE\\waist.png";
    }
   }
   Material {
@@ -271,7 +271,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "TEXTURE\\waist.png";
+    "data\\TEXTURE\\waist.png";
    }
   }
   Material {
@@ -304,7 +304,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "TEXTURE\\thigh.png";
+    "data\\TEXTURE\\thigh.png";
    }
   }
   Material {
@@ -313,7 +313,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "TEXTURE\\foot001.png";
+    "data\\TEXTURE\\foot001.png";
    }
   }
  }
