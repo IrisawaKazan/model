@@ -305,7 +305,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.100000;0.100000;0.100000;;
    TextureFilename {
-    "C:\\Users\\student\\Documents\\TEAM_C_Character\\TEAM_C_weapon\\TEXTURE\\tutorial001.png";
+    "data\\TEXTURE\\tutorial001.png";
    }
   }
   Material {
