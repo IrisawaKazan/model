@@ -2,10 +2,10 @@ Metasequoia Document
 Format Text Ver 1.0
 
 Scene {
-	pos 100.1766 -383.5201 5537.2905
+	pos 148.4419 -313.8038 5537.2905
 	lookat 0.0000 0.0000 0.0000
-	head 289.2465
-	pich 0.1903
+	head 307.9762
+	pich 0.0703
 	bank 0.0000
 	ortho 0
 	zoom2 1.3545
@@ -20,7 +20,7 @@ Scene {
 Material 3 {
 	"mat1" col(0.502 0.282 0.125 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
 	"mat2" col(1.000 0.710 0.502 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
-	"mat3" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
+	"mat3" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00) tex("C:\Users\student\Documents\TEAM_C_Character\TEAM_C_weapon\TEXTURE\tutoirial004.png")
 }
 Object "waist" {
 	visible 0
@@ -1765,7 +1765,7 @@ Object "obj2" {
 }
 Object "obj1" {
 	visible 15
-	locking 0
+	locking 1
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698
