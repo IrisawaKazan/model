@@ -4,8 +4,8 @@ Format Text Ver 1.0
 Scene {
 	pos 90.1772 35.5055 2163.0042
 	lookat 0.0000 0.0000 0.0000
-	head 276.4372
-	pich 0.3008
+	head 276.3871
+	pich 0.4308
 	bank 0.0000
 	ortho 0
 	zoom2 3.4675
@@ -1287,7 +1287,7 @@ Object "footR000" {
 }
 Object "footR001" {
 	visible 15
-	locking 0
+	locking 1
 	shading 1
 	facet 59.5
 	color 0.898 0.498 0.698

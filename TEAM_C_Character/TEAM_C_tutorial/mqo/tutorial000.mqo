@@ -4,8 +4,8 @@ Format Text Ver 1.0
 Scene {
 	pos 126.1770 51.3418 5537.2905
 	lookat 0.0000 0.0000 0.0000
-	head 295.2859
-	pich 0.1303
+	head 301.8659
+	pich 0.2603
 	bank 0.0000
 	ortho 0
 	zoom2 1.3545
@@ -20,7 +20,7 @@ Scene {
 Material 3 {
 	"mat1" col(0.502 0.282 0.125 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
 	"mat2" col(1.000 0.710 0.502 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
-	"mat3" col(1.000 1.000 1.000 1.000) dif(0.800) amb(1.000) emi(0.100) spc(0.000) power(5.00) tex("C:\Users\student\Documents\TEAM_C_Character\TEAM_C_weapon\TEXTURE\tutorial001.png")
+	"mat3" col(1.000 1.000 1.000 1.000) dif(0.800) amb(1.000) emi(0.100) spc(0.000) power(5.00) tex("C:\Users\student\Documents\TEAM_C_Character\TEAM_C_tutorial\TEXTURE\tutoirial002.png")
 }
 Object "waist" {
 	visible 0
