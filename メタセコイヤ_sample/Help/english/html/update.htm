@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<title>Release note</title>
+</head>
+
+<body>
+
+<h2>Release note</h2>
+<div class="menu">
+	<h3>What's new in Ver3.0.4</h3>
+	<ul>
+		<li>Bug fixes
+		<ul>
+			<li>An object name or a material name can be entered exceeds the limit number of characters.</li>
+			<li>[Invert a vertex] in [Wire] inserts a vertex at an invalid position.</li>
+		</ul>
+		</li>
+	</ul>
+	<h3>What's new in Ver3.0.3</h3>
+	<ul>
+		<li>Improvement
+		<ul>
+			<li>A FOV is restored when you change an orthogonal view to a perspective view.</li>
+			<li>When you specify a mapping image with a relative path in the Material Panel, the path will be shown as 
+			an initial folder.</li>
+			<li>Supported exporting STL files.</li>
+		</ul>
+		</li>
+		<li>Bug fixes
+		<ul>
+			<li>A route selection in [Select] command sometimes causes an error.</li>
+			<li>[Bevel] command sometimes causes an error.</li>
+			<li>A non-highlight line is sometimes selected in [Knife] or [Wire] commands.</li>
+			<li>A texture in a background image is not interpolated with a Direct3D display.</li>
+		</ul>
+		</li>
+	</ul>
+	<h3>What's new in Ver3.0.2</h3>
+	<ul>
+		<li>Improvement
+		<ul>
+			<li>When you specify a mapping image file at the same or under folder of the .mqo file, the file name is set 
+			as a relative path.</li>
+			<li>The V direction can be changed when you export a .dae file.</li>
+		</ul>
+		</li>
+		<li>Bug fixes
+		<ul>
+			<li>The file insert dialog is behind the main window when you drop a file from Explore.</li>
+			<li>A mirroring shape is not updated when you change a local coordinate without a shape interlock in [Local] 
+			command.</li>
+			<li>An application freezes when you drag an item for a long time in the Object Panel or the Material Panel.</li>
+			<li>A view is not updated when you change a type of a mirroring by a right-button clicked menu in the Object 
+			Panel.</li>
+		</ul>
+		</li>
+	</ul>
+	<h3>What's new in Ver3.0.1</h3>
+	<ul>
+		<li>Improvement
+		<ul>
+			<li>The folder that contains the editing file is set as an initial one when 'Save As' is called.</li>
+		</ul>
+		</li>
+		<li>Bug fixes
+		<ul>
+			<li>A Catmull-Clark patch causes an error when the same vertex in the one face is shared.</li>
+		</ul>
+		</li>
+	</ul>	
+	<h3>What's new in Ver3.0.0</h3>
+	<ul>
+		<li>System 
+		<ul>
+			<li>Improvement of a memory management.</li>
+			<li>A direction of a dolly by a wheel is reversed.</li>
+			<li>A dolly can be operated in the larger range.</li>
+		</ul>
+		</li>
+		<li><a href="config.htm">Configuration</a><ul>
+			<li>Added a font setting.</li>
+			<li>Added a selection of a format for help files.</li>
+			<li>Added a transparency for lines in back side of faces.</li>
+			<li>Added an anti-alias setting for Direct3D.</li>
+			<li>Added view operation settings for Alt + Left/Middle/Right buttons.</li>
+			<li>Added an inverse of an direction of a mouse operation for zoom or dolly.</li>
+			<li>Added a setting for a method of moving non-symmetry vertices.</li>
+			<li>Deprecated settings for text drawing in Direct3D and coordinate transformation in OpenGL.</li>
+			<li>Added a setting for a size of a handle.</li>
+		</ul>
+		</li>
+		<li>Panel<ul>
+			<li>A non-symmetry vertex is not snapped to the X=0 when the vertex is scaled in the edit panel.</li>
+			<li>Multiple materials can be selected and the properties of them are changed together in the material 
+			panel.</li>
+			<li>Supported three parallel lightings.</li>
+		</ul>
+		</li>
+		<li>Command<ul>
+			<li>Added [Growing], [Route] and [Edge loop] modes in <a href="command/select.htm">[Select]</a> command.</li>
+			<li>When a handle is moved in <a href="command/scale.htm">[Scale]</a>, <a href="command/rotate.htm">[Rotate]</a> 
+			command, it is snapped to the position based on the center.</li>
+			<li>The center position for scaling or rotating by [Scale] or [Rotate] command can be selected from a center 
+			position of a local coordinate, a zero point and a center position of selected parts.</li>
+			<li>A handle can be rotated correctly when the parent object is scaled in the <a href="command/local.htm">[Local]</a> command.</li>
+			<li>Separation to the left or right by mirroring becomes less likely to occur by rotating in [Local] 
+			command.</li>
+			<li>A front side of face is always created when the new face are pulled from a line in 			
+			<a href="command/pullface.htm">[Pull]</a> and <a href="command/wire.htm">[Wire - 
+			Create a triangle]</a> command.</li>
+			<li>A new triangle can be created by dragging between the edges of the two lines that share the same vertex 
+			in [Wire - Create a triangle] command.</li>
+			<li>The numeric display in the property of [Local] command is updated when the hierarchy is changed in the 
+			object panel.</li>
+			<li>Vertices are not separated&nbsp; at the same position, and a hole is not made by 			
+			<a href="command/bevel.htm">[Bevel]</a> command.</li>
+			<li>Supported to twist by 15 degrees by dragging with Shift key in <a href="command/twist.htm">[Twist]</a> command.</li>
+			<li>Added [Magnet], [Brush], [Expand], [Rect], [Rope], [Align U] and [Align V] modes in
+			<a href="command/uvedit.htm">[UV edit]</a> command.</li>
+			<li>Supported symmetry editing in [Move], [Scale] and [Rotate] mode in [UV edit] command.</li>
+			<li>UV vertices are shift along U or V direction only with dragging the Shift key by [Move] and [Magnet] 
+			mode in [UV edit] command.</li>
+			<li>UV vertices are rotated or scaled along the dragged vertex by [Rotate] and [Scale] mode in [UV edit] 
+			command.</li>
+			<li>Supported rotation of the initial lattice in <a href="command/lattice.htm">[Lattice]</a> command.</li>
+			<li>Supported aligning the direction along the local coordinate in [Lattice] command.</li>
+			<li>Added a brush mode in <a href="command/vertcolor.htm">[Vertex color]</a> command.</li>
+			<li>Added <a href="command/sculpt.htm">[Sculpt]</a> command.</li>
+		</ul>
+		</li>
+		<li>Menu<ul>
+			<li>FOV is not changed when a [Fit to view] menu is called.</li>
+		</ul>
+		</li>
+		<li>Preview<ul>
+			<li>Improvement the displaying of flat, cylinder and sphere mapping on the curved surface by patch type 1/2.</li>
+			<li>Support Direct3D displaying using DirectX 9.0.</li>
+			<li>Support displaying textures in three orthogonal views.</li>
+			<li>Back side of lines are thinly displayed.</li>
+		</ul>
+		</li>
+		<li>Export/Import files<ul>
+			<li>Fixed loading 8-bit .tga files with alpha palette.</li>
+			<li>Supported exporting .dae(COLLADA 1.4) files.</li>
+			<li>When a file except .MQO is loaded, textures are loaded with the relative path based on a folder contains 
+			the file.</li>
+			<li>Files supported by Import plug-ins are displayed when [All supported files] is selected in the file 
+			import dialog.</li>
+			<li>Supported PSD files loading for mapping images and background images. (Read only)</li>
+		</ul>
+		</li>
+	</ul>
+</div>
+
+</body>
+
+</html>
