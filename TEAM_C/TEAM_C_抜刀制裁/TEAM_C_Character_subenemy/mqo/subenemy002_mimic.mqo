@@ -2,13 +2,13 @@ Metasequoia Document
 Format Text Ver 1.0
 
 Scene {
-	pos -11.7204 -261.4782 585.9377
+	pos -40.3887 -105.7398 2400.0007
 	lookat 0.0000 0.0000 0.0000
-	head 0.0664
-	pich 0.0808
+	head 0.5064
+	pich 0.2208
 	bank -0.0100
 	ortho 0
-	zoom2 12.8000
+	zoom2 3.1250
 	amb 0.250 0.250 0.250
 	dirlights 1 {
 		light {
@@ -64,7 +64,7 @@ Object "lower_jaw000" {
 	}
 }
 Object "fang000" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -93,7 +93,7 @@ Object "fang000" {
 	}
 }
 Object "fang001" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -122,7 +122,7 @@ Object "fang001" {
 	}
 }
 Object "teeth000" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -143,7 +143,7 @@ Object "teeth000" {
 	}
 }
 Object "teeth001" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -164,7 +164,7 @@ Object "teeth001" {
 	}
 }
 Object "teeth002" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -185,7 +185,7 @@ Object "teeth002" {
 	}
 }
 Object "teeth003" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -206,7 +206,7 @@ Object "teeth003" {
 	}
 }
 Object "teeth004" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -227,7 +227,7 @@ Object "teeth004" {
 	}
 }
 Object "teeth005" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -248,7 +248,7 @@ Object "teeth005" {
 	}
 }
 Object "teeth006" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -269,7 +269,7 @@ Object "teeth006" {
 	}
 }
 Object "teeth007" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -290,7 +290,7 @@ Object "teeth007" {
 	}
 }
 Object "teeth008" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -311,7 +311,7 @@ Object "teeth008" {
 	}
 }
 Object "teeth009" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -332,7 +332,7 @@ Object "teeth009" {
 	}
 }
 Object "teeth010" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -353,7 +353,7 @@ Object "teeth010" {
 	}
 }
 Object "teeth011" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -374,7 +374,7 @@ Object "teeth011" {
 	}
 }
 Object "teeth012~17" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -440,7 +440,7 @@ Object "teeth012~17" {
 	}
 }
 Object "teeth018" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -461,7 +461,7 @@ Object "teeth018" {
 	}
 }
 Object "teeth019" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
@@ -482,7 +482,7 @@ Object "teeth019" {
 	}
 }
 Object "tongue000" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
