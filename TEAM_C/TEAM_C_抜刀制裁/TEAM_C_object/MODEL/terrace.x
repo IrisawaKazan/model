@@ -1853,7 +1853,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "..\\TEXTURE\\advertisement000.jpg";
+    "data\\TEXTURE\\advertisement000.jpg";
    }
   }
   Material {
@@ -1862,7 +1862,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "..\\TEXTURE\\advertisement001.jpg";
+    "data\\TEXTURE\\advertisement001.jpg";
    }
   }
   Material {
@@ -1871,7 +1871,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "..\\TEXTURE\\advertisement002.jpg";
+    "data\\TEXTURE\\advertisement002.jpg";
    }
   }
  }
