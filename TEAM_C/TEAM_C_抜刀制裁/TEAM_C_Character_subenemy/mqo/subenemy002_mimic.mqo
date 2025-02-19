@@ -482,7 +482,7 @@ Object "teeth019" {
 	}
 }
 Object "tongue000" {
-	visible 15
+	visible 0
 	locking 1
 	shading 1
 	facet 59.5
