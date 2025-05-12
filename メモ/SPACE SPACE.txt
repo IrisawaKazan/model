@@ -1,5 +1,5 @@
 <SPACE SPACE>
-(参考: Ding Dong XL, KNACK)
+(参考: Ding Dong XL, KNACK, 釣りゲーム)
 スペースキーのみで操作するディンドンのようなスコア稼ぎ避けゲーム
 世界観は宇宙
 
