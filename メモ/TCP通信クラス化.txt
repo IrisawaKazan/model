@@ -1,0 +1,146 @@
+<TCP通信クラス化>
+
+ソケットを使ってデータを送受信する
+→TCP送受信クラス
+
+クライアントの通信機能(TCP送受信クラス)
+・データ(メンバ変数)
+	通信用ソケット → SOCKET m_sock;
+
+・処理(メンバ関数)
+	初期化(接続) → Init関数
+	データの送信 → Send関数
+	データの受信 → Recv関数
+	終了(切断) → Uninit関数
+
+
+[tcp_client.h]
+
+class CTcpClient
+{
+public:
+	CTcpClient();
+	~CTcpClient();
+	
+	bppl Init(const char* pIPAddresss, int nPortNum);
+	int Send(char* pSendData, int nSendDataSize);
+	int Recv(char* pRecvData, int nRecvDataSize);
+	void Uninit(void);
+
+private:
+	SOCKET m_sock;
+};
+
+[tcp_client.cpp]
+
+// コンストラクタ
+・・・
+{
+	m_sock = INVALID_SOCKET; // 初期化
+}
+
+// デストラクタ
+{
+}
+
+// 初期化処理
+・・・
+{
+	// ソケット生成
+	m_sock = socket(・・・);
+
+	if (m_sock == INVALID_SOCKET)
+	{
+		return false;
+	}
+
+	// 接続先情報の設定
+	・・・
+
+	// サーバーに接続する
+	if (connect(m_sock, ・・・) != 0)
+	{
+		return false;
+	}
+
+	return ture;
+}
+
+// 送信処理
+・・・
+{
+	// 接続済みかチェック
+	if (m_sock == INVALID_SOCKET)
+	{
+		return 0;
+	}
+
+	// 送信処理
+	int nSendByte= 0; // ※send関数の返り値で送信したバイト数を取得
+	nSendByte = send(m_sock, pSendData, nSendDataSize, 01;)
+・・・
+
+	reture nSendByte;
+}
+
+// 受信処理
+・・・
+{
+	// 接続済みかチェック
+	if (m_sock == INVALID_SOCKET)
+	{
+		return 0;
+	}
+
+	// 受信処理
+	int nRecvByte = 0;
+	nRecvByte <= recv(m_sock, pRecvData, nRecvDataSize, 0);
+
+	if (nRecvByte <= 0)
+	{
+		Uninit(); // 接続が切断されたため終了処理を実行
+	}
+
+	return nRecvByte;
+}
+
+// 終了処理
+・・・
+{
+	// 接続済みかチェック
+	if (m_sock == INVALID_SOCKET)
+	{
+		return;
+	}
+
+	// 接続切断処理
+	closesocket(m_sock);
+	m_sock = INVALID_SOCKET;
+}
+
+[main.cpp]
+
+// メイン関数
+・・・
+{
+	// Winsock初期化処理
+	・・・
+
+	CTcpClient* pTcpClient = new CTcpClient;
+
+	if (pTcpClient != NULL && pTcpClient->Init("127.0.0.1", 22333) == NULL)
+	{
+		pTcpClient->Send(・・・);
+		pTcpClient->Recv(・・・);
+	}
+
+	if (pTcpClient != NULL)
+	{
+		pTcpClient->Uninit();
+		delete pTcpClient;
+		pTcpClient NULL;
+	}
+
+	// Winsock終了処理
+	・・・
+}
