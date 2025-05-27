@@ -16,6 +16,19 @@
 	0x01
 	0x02
 
-
 int型等の複数バイトの型はエンディアン変換が必要
 char型は1バイトのため変換する必要はない
+
+
+・送信時の変換(※4バイトデータの場合[int, float])
+→htonl関数を使用する
+int nData = 258;
+nData = htonl(nData); // エンディアン変換(htonl to network)
+--- 送信処理 ---
+
+・受信時の変換(※4バイトデータの場合[int, float])
+→ntohl関数を使用する
+--- 受信処理 ---
+int nData = 0;
+memcpy(&nData, &aRecvData[0], sizeof(int));
+nData = ntohl(nData); // エンディアン変換(network to host)
