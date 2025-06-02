@@ -22,7 +22,7 @@ public:
 	CTcpClient();
 	~CTcpClient();
 	
-	bppl Init(const char* pIPAddresss, int nPortNum);
+	bool Init(const char* pIPAddresss, int nPortNum);
 	int Send(char* pSendData, int nSendDataSize);
 	int Recv(char* pRecvData, int nRecvDataSize);
 	void Uninit(void);
@@ -63,7 +63,7 @@ private:
 		return false;
 	}
 
-	return ture;
+	return true;
 }
 
 // 送信処理
