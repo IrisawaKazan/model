@@ -144,3 +144,134 @@ private:
 	// Winsock終了処理
 	・・・
 }
+
+
+クライアントの通信機能
+
+・データ(メンバ変数)
+	接続待ち受け用ソケット → m_sockServer;
+
+・処理(メンバ関数)
+	初期化(待ち受け準備) → Init関数
+	接続待ち受け → Accept関数
+	終了(待ち受け終了) → Uninit関数
+
+
+[tcp_listener.h]
+
+class CTcpListener
+{
+public:
+	CTcpListener();
+	~CTcpListener();
+	
+	bool Init(int nPortNum);
+	CTcpClient* Accept(void);
+	void Uninit(void);
+
+private:
+	SOCKET m_sockServer;
+};
+
+[tcp_client.h]
+
+class CTcpClient
+{
+public:
+	・・・
+	bool Init(const char* pIPAddresss, int nPortNum);
+	bool Init(SOCKET sock);
+	・・・
+};
+
+[tcp_client.cpp]
+
+// 初期化処理
+bool CTcpClient::Init(SOCKET sock)
+{
+	// 接続済みソケットをメンバ変数に設定
+	m_sock = sock;
+	return true;
+}
+
+[tcp_listener.cpp]
+
+// コンストラクタ
+・・・
+{
+	m_sockServer = INVALID_SOCKET; // 初期化
+}
+
+// デストラクタ
+・・・
+{
+}
+
+// 初期化処理
+・・・
+{
+	// 接続受付用ソケットの生成
+	・・・
+	// 接続を受け付けるための準備
+	・・・
+	return true;
+}
+
+// 接続受付
+・・・
+{
+	// 接続ソケット生成済みかチェック
+	・・・
+	// 接続を待つ
+	SOCKET sock = accept(m_sockServer, ・・・);
+
+	// クライアント接続後, TCP送受信クラスを生成
+	CTcpClient* pTcpClient = new CTcpClient;
+
+	if (pTcpClient != NULL)
+	{
+		pTcpClient->Init(sock); // 接続済みのソケットで初期化
+	}
+
+	return pTcpClient;
+}
+
+// 終了処理
+・・・
+{
+	// 待受ソケット生成済みかチェック
+	if (m_sockServer == INVALID_SOCKET)
+	{
+		return;
+	}
+
+	// 待受ソケット切断
+	closesocket(m_sockServer);
+	m_sockServer = INVALID_SOCKET;
+}
+
+[main.cpp]
+
+// メイン関数
+・・・
+{
+	// Winsock初期化処理
+
+	CTcpListener* pTcpListener = new CTcpListener;
+
+	if (pTcpListener != NULL)
+	{
+		while(1)
+		{
+			CTcpClient* pTcpClient = pTcpListener->Accept();
+
+			// 送受信処理
+
+			pTcpClient->Uninit();
+			delete pTcpClient;
+			pTcpClient = NULL;
+		}
+	}
+
+	// Winsock終了処理
+}
