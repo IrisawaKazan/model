@@ -1,0 +1,59 @@
+<マルチスレッド>
+
+~スレッド~
+
+プログラムの一連の処理を実行する主体(対象)のこと
+
+main関数から始まるスレッド: メインスレッド
+1つのスレッドのみで動作している: シングルスレッド
+
+
+~マルチスレッド~
+
+プログラムの中でスレッドが複数動作すること: マルチスレッド
+メインスレッドとは別に作成したスレッド: ワーカースレッド
+
+
+~マルチスレッドのライブラリ~
+
+#include<thread>
+std::thread
+
+void ThreadProc(void)
+{
+	// スレッド処理
+}
+
+int main(void)
+{
+	// スレッドの生成
+	std::thread th(ThreadProc);
+
+	// スレッドを切り離す
+	th.detach();
+
+	// メイン処理
+}
+
+
+std::thread試しに使ってみる
+
+void ThreadProc(void)
+{
+	for (int nCntTimer = 0;nCntTimer < 10;nCntTimer++)
+	{
+		printf("Count...%d\n", nCntTimer);
+		std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+	}
+}
+
+int main(void)
+{
+	// スレッドの生成
+	std::thread th(ThreadProc);
+
+	// スレッドを切り離す
+	th.detach();
+
+	// キー入力待ち
+}
