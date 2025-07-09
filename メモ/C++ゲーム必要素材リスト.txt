@@ -1,0 +1,12 @@
+<C++ゲーム必要素材リスト>
+
+~MODEL~
+
+
+~BGM~
+・resultBGM.wav
+
+~SE~
+・speedUpSE.wav
+
+~TEXTURE~
